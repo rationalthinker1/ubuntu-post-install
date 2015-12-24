@@ -10,7 +10,6 @@ fi
 source ./bin/functions.sh
 
 # Installing script. Add # at the beginning to not install them.
-# install basic
-# install atom
-# install chrome
-install vim
+install basic
+install atom
+install chrome

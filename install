@@ -14,3 +14,4 @@ while [[ "$#" -gt 0 ]]; do
 	install $1
 	shift
 done
+install update

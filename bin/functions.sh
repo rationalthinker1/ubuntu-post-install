@@ -9,9 +9,21 @@ function install() {
 		filename="${application}"
 		chmod u+x ${BASE_DIR}/installers/${filename}.sh
 		${BASE_DIR}/installers/${filename}.sh
-    done
+	done
 }
 export -f install
+
+function gnome-install() {
+	ABSOLUTE_PATH=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd)/`basename "${BASH_SOURCE[0]}"`
+	BASE_DIR=$(dirname ${ABSOLUTE_PATH})
+
+	chmod u+x ${BASE_DIR}/installers/gnome-extension-installer.sh
+	for extension_id in "$@"
+	do
+		${BASE_DIR}/installers/gnome-extension-installer.sh "${extension_id}"
+	done
+}
+export -f gnome-install
 
 function apt-install() {
 	for application in "$@"

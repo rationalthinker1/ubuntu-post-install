@@ -1,0 +1,10 @@
+#!/bin/bash 
+
+# Load basic functions to run this script.
+source ./bin/functions.sh
+
+# Looping through parameters
+while [[ "$#" -gt 0 ]]; do 
+	gnome-install $1
+	shift
+done

@@ -1,7 +1,7 @@
 #!/bin/bash 
 echo "Installing Vim..."
 
-# Install Vim 
+# Install vim's dependencies
 apt-install rake
 apt-install ruby-dev
 apt-install exuberant-ctags

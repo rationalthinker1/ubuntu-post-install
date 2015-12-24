@@ -9,7 +9,16 @@ fi
 # Load basic functions to run this script.
 source ./bin/functions.sh
 
-# Installing script. Add # at the beginning to not install them.
+# Installs basic packages
 install basic
-install atom
-install chrome
+
+# Installing script. Add # at the beginning to not install them.
+# install atom
+# install chrome
+install dropbox
+install numix
+install sublime-text-3
+install veracrypt
+
+# Runs the updates on the packages installed
+install update

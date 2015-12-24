@@ -14,3 +14,4 @@ apt-install unzip
 apt-install htop
 apt-install curl
 apt-install git
+apt-install vim

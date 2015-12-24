@@ -2,7 +2,7 @@
 echo "Installing Chrome..."
 
 # Add the Chrome repository
-add-apt-repository -y "deb http://dl.google.com/linux/chrome/deb/ stable main"
+add-repo "deb http://dl.google.com/linux/chrome/deb/ stable main"
 
 # Signing key to be able to verify downloaded packages
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -

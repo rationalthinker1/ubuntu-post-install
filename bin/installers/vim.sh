@@ -2,7 +2,10 @@
 echo "Installing Vim..."
 
 # Install Vim 
-apt-get install git curl rake ruby-dev exuberant-ctags vim-gnome
+apt-install rake
+apt-install ruby-dev
+apt-install exuberant-ctags
+apt-install vim-gnome
 
 # Loading scripts from online
 curl -Lo- http://bit.ly/janus-bootstrap | bash

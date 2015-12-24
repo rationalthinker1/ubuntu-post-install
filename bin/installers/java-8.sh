@@ -2,7 +2,8 @@
 echo "Installing Java 8..."
 
 # Install dependencies
-apt-install python-software-properties debconf-utils
+apt-install python-software-properties 
+apt-install debconf-utils
 
 # Adding Repository
 app-repo ppa:webupd8team/java

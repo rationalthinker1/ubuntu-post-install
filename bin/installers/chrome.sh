@@ -21,4 +21,4 @@ mkdir -p "$HOME/.config/google-chrome/"
 touch "$HOME/.config/google-chrome/First Run"
 
 # Delete package
-rm -f /tmp/google-chrome-stable_current_amd64.deb
+rm /tmp/google-chrome-stable_current_amd64.deb

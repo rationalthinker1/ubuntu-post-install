@@ -8,4 +8,4 @@ wget https://atom.io/download/deb -O /tmp/atom-deb
 dpkg -i /tmp/atom-deb
 
 # Delete insatllation file
-rm atom-deb
+rm /tmp/atom-deb

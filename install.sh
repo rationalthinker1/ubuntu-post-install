@@ -13,8 +13,8 @@ source ./bin/functions.sh
 install basic
 
 # Installing script. Add # at the beginning to not install them.
-# install atom
-# install chrome
+install atom
+install chrome
 install dropbox
 install numix
 install sublime-text-3

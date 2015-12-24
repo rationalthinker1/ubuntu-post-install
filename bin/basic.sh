@@ -14,9 +14,4 @@ apt-get install -y --no-install-recommends vlc
 apt-get install -y --no-install-recommends unzip
 apt-get install -y --no-install-recommends htop
 
-add-apt-repository -y ppa:webupd8team/sublime-text-3
-apt-get install -y --no-install-recommends sublime-text-installer
-
 apt-get install -y --no-install-recommends git
-apt-get install -y --no-install-recommends nodejs
-apt-get install -y --no-install-recommends npm

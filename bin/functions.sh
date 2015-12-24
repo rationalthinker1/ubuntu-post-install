@@ -13,3 +13,17 @@ function install() {
 
 	${BASE_DIR}/${FILENAME}.sh
 }
+
+function apt-install() {
+	APPNAME=$1
+	apt-get install -y --no-install-recommends "${APPNAME}"
+}
+
+function apt-update() {
+	apt-get -y update
+}
+
+function add-repo() {
+	REPO=$1
+	add-apt-repository -y "${REPO}"
+}

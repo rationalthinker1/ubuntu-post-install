@@ -8,7 +8,7 @@ add-apt-repository -y "deb http://dl.google.com/linux/chrome/deb/ stable main"
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
 
 # Install Chrome's dependencies
-apt-get -qqy install libxss1
+apt-install libxss1
 
 # Download package
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P /tmp

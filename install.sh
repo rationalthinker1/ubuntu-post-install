@@ -9,4 +9,7 @@ fi
 # Load basic functions to run this script.
 source ./bin/functions.sh
 
+# Installing script. Add # at the beginning to not install them.
+install basic
 install atom
+install chrome

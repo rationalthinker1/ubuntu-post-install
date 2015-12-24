@@ -2,7 +2,7 @@
 echo "Installing VeraCrypt..."
 
 # Add repository
-add-apt-repository ppa:unit193/encryption
+add-apt-repository -y ppa:unit193/encryption
 
 # Update list of available packages
 apt-get -y update

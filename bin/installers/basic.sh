@@ -2,7 +2,6 @@
 echo "Installing Basic..."
 
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
-add-repo "deb http://linux.dropbox.com/ubuntu $(lsb_release -sc) main"
 add-repo "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 
 apt-install build-essential

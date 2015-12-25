@@ -45,3 +45,21 @@ function add-repo() {
     done
 }
 export -f add-repo
+
+# simple-install ppa:numix/ppa numix-gtk-theme numix-icon-theme-circle
+function simple-install() {
+	repository=$1
+	# Add the repository
+	add-repo repository
+	shift
+
+	# Update list of available packages
+	apt-update
+
+	for application in "$@"
+	do
+		# Install application
+		apt-install application
+	done
+}
+export -f simple-install

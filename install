@@ -14,4 +14,6 @@ while [[ "$#" -gt 0 ]]; do
 	install $1
 	shift
 done
-install update
+
+# Clean up after installing
+source ./bin/clean.sh

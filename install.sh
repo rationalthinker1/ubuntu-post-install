@@ -20,8 +20,8 @@ install numix
 install sublime-text-3
 install veracrypt
 
-# Runs the updates on the packages installed
-install update
+# Clean up after installing
+source ./bin/clean.sh
 
 # Gnome extension installer
 gnome-install 517 # - Caffeine

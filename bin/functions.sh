@@ -1,8 +1,6 @@
 #!/bin/bash
 ABSOLUTE_PATH=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd)/`basename "${BASH_SOURCE[0]}"`
 BASE_DIR=$(dirname ${ABSOLUTE_PATH})
-chmod u+x ${BASE_DIR}/*.sh
-chmod u+x ${BASE_DIR}/installers/*.sh
 
 function install() {
 	for application in "$@"
@@ -45,8 +43,9 @@ export -f add-repo
 # simple-install ppa:numix/ppa numix-gtk-theme numix-icon-theme-circle
 function simple-install() {
 	repository=$1
+
 	# Add the repository
-	add-repo repository
+	add-repo "${repository}"
 	shift
 
 	# Update list of available packages
@@ -55,7 +54,7 @@ function simple-install() {
 	for application in "$@"
 	do
 		# Install application
-		apt-install application
+		apt-install "${application}"
 	done
 }
 export -f simple-install

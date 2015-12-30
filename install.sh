@@ -16,9 +16,11 @@ install basic
 install atom
 install chrome
 install dropbox
+install node
 install numix
+install spotify
+install sshrc
 install sublime-text-3
-install veracrypt
 
 # Clean up after installing
 source ./bin/clean.sh

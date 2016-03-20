@@ -22,7 +22,7 @@ export -f gnome-install
 function apt-install() {
 	for application in "$@"
 	do
-		apt-get install -y --no-install-recommends "${application}"
+		apt-get install -f -y "${application}"
     done
 }
 export -f apt-install

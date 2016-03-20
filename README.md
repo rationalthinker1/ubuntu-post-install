@@ -18,3 +18,4 @@ You can add installers in /bin/installers. The name of the filename is the name 
 ## Todo:
 - Make install script for Intellij idea
 - Make install script for Terminator
+- Make install script for AppGrid

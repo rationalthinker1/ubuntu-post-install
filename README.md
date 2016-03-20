@@ -13,3 +13,8 @@ You can add installers in /bin/installers. The name of the filename is the name 
 `apt-update APP_NAME  => apt-get -y update`
 
 `app-repo APP_NAME    => add-apt-repository -y`
+
+
+## Todo:
+- Make install script for Intellij idea
+- Make install script for Terminator

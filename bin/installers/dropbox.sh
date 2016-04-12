@@ -1,5 +1,9 @@
-#!/bin/bash 
+#!/bin/bash
 echo "Installing Dropbox..."
+
+wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+
+./.dropbox-dist/dropboxd
 
 # Add repository key
 apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
@@ -11,4 +15,4 @@ add-repo "deb http://linux.dropbox.com/ubuntu $(lsb_release -sc) main"
 apt-update
 
 # Install
-apt-install nautilus-dropbox
+apt-install dropbox

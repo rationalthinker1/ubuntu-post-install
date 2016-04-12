@@ -2,6 +2,9 @@
 ABSOLUTE_PATH=$(cd `dirname "${BASH_SOURCE[0]}"` && pwd)/`basename "${BASH_SOURCE[0]}"`
 BASE_DIR=$(dirname ${ABSOLUTE_PATH})
 
+CURRENT_USER="$(who am i | awk '{print $1}')"
+export $CURRENT_USER
+
 function install() {
 	for application in "$@"
 	do

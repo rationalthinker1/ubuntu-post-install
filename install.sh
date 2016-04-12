@@ -4,10 +4,7 @@
 source ./bin/functions.sh
 
 # Check if the script is running as root.
-if [[ $EUID -ne 0 ]]; then
-   echo "This script must be ran as root."
-   exit 1
-fi
+[ "$UID" -eq 0 ] || exec sudo bash "$0" "$@"
 
 # Installs basic packages
 #install basic

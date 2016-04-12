@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash
 echo "Installing Basic..."
 
 sudo apt-get update && sudo apt-get install -f
@@ -8,6 +8,7 @@ add-repo "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 
 apt-install build-essential
 apt-install ubuntu-restricted-extras
+apt-install autoconf
 apt-install filezilla
 apt-install p7zip-full
 apt-install vlc

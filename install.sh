@@ -10,20 +10,20 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # Installs basic packages
-install basic
+#install basic
 
 # Installing script. Add # at the beginning to not install them.
-install atom
-install chrome
-install dropbox
-install node
-install numix
-install spotify
-install sshrc
-install sublime-text-3
+#install atom
+#install chrome
+#install dropbox
+#install node
+#install numix
+#install spotify
+#install sshrc
+#install sublime-text-3
 
 # Clean up after installing
-source ./bin/clean.sh
+#source ./bin/clean.sh
 
 # Gnome extension installer
 gnome-install 517 # - Caffeine

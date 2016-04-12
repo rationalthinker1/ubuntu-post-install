@@ -43,7 +43,8 @@ then
   # unzip extension to installation folder
   mkdir -p "${EXTENSION_PATH}/${EXTENSION_UUID}"
   unzip /tmp/extension.zip -d "${EXTENSION_PATH}/${EXTENSION_UUID}"
-
+  chown -R raza:raza "${EXTENSION_PATH}/${EXTENSION_UUID}"
+  
   # list enabled extensions
   EXTENSION_LIST=$(gsettings get org.gnome.shell enabled-extensions | sed 's/^.\(.*\).$/\1/')
 

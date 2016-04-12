@@ -16,6 +16,7 @@ apt-install htop
 apt-install curl
 apt-install git
 apt-install vim
+apt-install vim-gnome
 
 # install git extras https://github.com/visionmedia/git-extras
 (rm -rf /tmp/git-extras && cd /tmp && git clone --depth 1 https://github.com/visionmedia/git-extras.git && cd git-extras && sudo make install)
